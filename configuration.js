@@ -4,14 +4,15 @@ function setup(){
 
 /*------------------Level One------------------------------*/
 const levelOnePlayerWidth = 20;
-const levelOnePlayerWidth = 50;
+const levelOnePlayerHeight = 50;
 /*--------------------------------------------------------------*/
+
 /*------------------Level Two-----------------------------------*/
-/*------------------Level One------------------------------*/
 const levelTwoPlayerWidth = 20;
-const levelTwoPlayerWidth = 50;
+const levelTwoPlayerHeight = 50;
 /*--------------------------------------------------------------*/
+
 /*------------------Level Three-----------------------------------*/
 const levelThreePlayerWidth = 20;
-const levelThreePlayerWidth = 50;
+const levelThreePlayerHeight = 50;
 /*--------------------------------------------------------------*/

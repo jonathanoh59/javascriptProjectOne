@@ -29,6 +29,14 @@
     left: 500px;
     animation: block 1s infinite linear;
 }
+#character{
+  background-color:  orange;
+  width: 20px;
+  height: 50px;
+  position: relative;
+  animation: jump();
+}
+
 @keyframes block{
     0%{left: 500px}
     100%{left: -20px}
