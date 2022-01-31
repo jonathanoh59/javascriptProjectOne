@@ -1,21 +1,64 @@
 <!DOCTYPE html>
+<!-- Document Type Declaration.
+It informs the web browser about the type
+and version of HTML used in building the web document. -->
+
+<!-- HTML tags help web browsers convert HTML documents into web pages -->
+<!-- "lang" is language and set to English-->
+<!-- "onclick" is an attribute anchored into the html tag-->
+
+<!-- calls the function jump() from script.js, which calls the jump animation
+     from the css file, when the mouse is clicked-->
 <html lang="en" onclick="jump()">
+<!-- head tag contains specific information about a web page (metadata).
+This information includes things like the title of the document (mandatory),
+scripts or links to scripts, and CSS files. -->
   <head>
+    <!-- The charset attribute specifies the character encoding for the HTML document.
+    The HTML5 specification encourages web developers to use the UTF-8 character set,
+    which covers almost all of the characters and symbols in the world! -->
     <meta charset="UTF-8">
+    <!--The <title> tag defines the title of the document.
+    The contents of a page title is important for search engine optimization (SEO)
+    The page title is used by search engine algorithms
+    to decide the order when listing pages in search results.-->
     <title>
       Jump Game
     </title>
+    <!-- The link tag in HTML is used to define a link
+    between a document and an external resource.
+    The values in the link element denote how the item being linked/related
+    to the containing document.-->
     <link rel="stylesheet" href="style.css">
   </head>
-
+  <!-- The HTML body tag defines the main content
+  of the HTML document or the section of the HTML document
+  that will be directly visible on your web page. -->
   <body>
+    <!-- class is an attribute of the div tags,
+    "game is a class" (defined in the style.css file).
+    Classes are used to to make changes to HTML elements with a specified class -->
     <div class="game">
-      <div id="character"></div>
-      <div id="block"></div>
+      <!-- The id attribute defines an identifier (ID)
+      which must be unique in the whole document.
+      Its purpose is to identify the element when linking,
+      scripting, or styling.-->
+      <div id="character">
+        <!--<img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1d301e53-466e-40d7-9823-08cd10fe5014/dc9q3vg-6b57b01b-b16d-4b6e-b735-42b97ef99a88.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzFkMzAxZTUzLTQ2NmUtNDBkNy05ODIzLTA4Y2QxMGZlNTAxNFwvZGM5cTN2Zy02YjU3YjAxYi1iMTZkLTRiNmUtYjczNS00MmI5N2VmOTlhODguZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.6gi8P0KOLVV8BSyaZJZtGVh434byavnamGJ7MNwlkb4">-->
+      </div>
+      <div id="block" ></div>
     </div>
+    <!-- The paragraph tag (<p>) is used to represent paragraphs-->
+    <!-- The span tag is a generic inline container-->
     <p>Score: <span id="scoreSpan"></span></p>
 </body>
 
+  <!-- The <script> HTML element is used to embed executable code or data;
+  this is typically used to embed or refer to JavaScript code.
+  The <script> element can also be used with other languages,
+  such as WebGL's GLSL shader programming language and JSON. -->
+
+  <!-- The source (src) attribute is used to specify the (media) resource-->
   <script src="configuration.js"></script>
   <script src="loadLevels.js"></script>
   <script src="script.js"></script>

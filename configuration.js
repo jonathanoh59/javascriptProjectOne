@@ -3,16 +3,16 @@ function setup(){
 }
 
 /*------------------Level One------------------------------*/
-const levelOnePlayerWidth = 20;
-const levelOnePlayerHeight = 50;
+const levelOnePlayerWidth = "180px";
+const levelOnePlayerHeight = "200px";
 /*--------------------------------------------------------------*/
 
 /*------------------Level Two-----------------------------------*/
-const levelTwoPlayerWidth = 20;
-const levelTwoPlayerHeight = 50;
+const levelTwoPlayerWidth = "40px";
+const levelTwoPlayerHeight = "50px";
 /*--------------------------------------------------------------*/
 
 /*------------------Level Three-----------------------------------*/
-const levelThreePlayerWidth = 20;
-const levelThreePlayerHeight = 50;
+const levelThreePlayerWidth = "60px";
+const levelThreePlayerHeight = "50px";
 /*--------------------------------------------------------------*/

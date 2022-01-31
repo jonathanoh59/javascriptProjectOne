@@ -1,8 +1,27 @@
+/* Cascading Style Sheets (CSS) is a stylesheet language
+used to describe the presentation of a document written in HTML or XML.
+CSS describes how elements should be rendered on screen, on paper, in speech, or on other media */
+
+/* The asterisk (*) is known as the CSS universal selectors.
+It can be used to select any and all types of elements in an HTML page.
+The asterisk can also be followed by a selector while using to select a child object.
+This selector is useful when we want to select all the elements on the page.
+While selecting elements, if we use just asterisk (*),
+then all the elements of the HTML page gets selected irrespective of the parent-child relation. */
+
+/* Padding is used to create space around an element's content, inside of any defined borders.
+Margins are used to create space around elements, outside of any defined borders.
+The CSS overflow property controls what happens to content that is too big to fit into an area.
+This property (overflow-x) helps us to display the content which is overflowing from the page horizontally.
+hidden - The overflow is clipped, and the rest of the content will be invisible*/
 *{
     padding: 0;
     margin: 0;
     overflow-x: hidden;
 }
+
+/* ".game" is a class,
+defines the area that contains the game on the browser */
 .game{
     width: 500px;
     height: 200px;
@@ -10,18 +29,45 @@
     margin: auto;
 }
 
+/* ".animate is a class",
+
+CSS allows animation of HTML elements without using JavaScript or Flash
+
+To use CSS animation, you must first specify some keyframes for the animation.
+Keyframes hold what styles the element will have at certain times.
+
+To get an animation to work, you must bind the animation to an element.*/
+
+/*the 0.3s is the transition time: time to complete the animation
+  linear here is the transition-timing-function: describes how the animation is moves*/
 .animate{
     animation: jump 0.3s linear;
 }
+/* "jump" is an animation,
+Inside the curly braces, you define keyframes,
+that specify the values for the properties you’re animating,
+at certain points during the animation.
+This allows you to control the intermediate steps in a sequence of animations.*/
+
+/* top is the elements top
+The @keyframes rule below says that the element’s top offset will be
+equal to 150px at the beginning, then at 30-70% the top offset will be 100px,
+and end of the animation, and that it will be equal to 150px*/
+
 @keyframes jump{
     0%{top: 150px;}
     30%{top: 100px;}
     70%{top: 100px;}
     100%{top: 150px;}
 }
+/* represents the obstacles in the game!
+   The 'position' property specifies the type of positioning method used for an element.
+   An element with position: relative; is positioned relative to its normal position,i.e.
+   the top of the block is 130px from the top and 500px from the left.
 
+   block id uses the animation called block */
 #block{
-    background-color: blue;
+    background-color: orange;
     width: 20px;
     height: 20px;
     position: relative;
@@ -29,18 +75,21 @@
     left: 500px;
     animation: block 1s infinite linear;
 }
+/*character is an id*/
 #character{
-  background-color:  orange;
-  width: 20px;
-  height: 50px;
+  background-color:  white;
+  width: 400px;
+  height: 360px;
   position: relative;
   animation: jump();
 }
-
+/*animation moves the block from the right hand side of the area (game class)
+to the left hand side*/
 @keyframes block{
     0%{left: 500px}
     100%{left: -20px}
 }
+/* paragraph text is centred: visible for the "Score: x " just below the area */
 p{
     text-align: center;
 }
