@@ -77,9 +77,9 @@ and end of the animation, and that it will be equal to 150px*/
 }
 /*character is an id*/
 #character{
-  background-color:  white;
-  width: 400px;
-  height: 360px;
+  background-color:  blue;
+  width: 20px;
+  height: 50px;
   position: relative;
   animation: jump();
 }
@@ -87,7 +87,7 @@ and end of the animation, and that it will be equal to 150px*/
 to the left hand side*/
 @keyframes block{
     0%{left: 500px}
-    100%{left: -20px}
+    100%{left: -40px}
 }
 /* paragraph text is centred: visible for the "Score: x " just below the area */
 p{

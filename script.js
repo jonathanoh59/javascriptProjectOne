@@ -3,14 +3,18 @@
 
 // storing the character id function in the variable character
 var character = document.getElementById("character");
-// storing the block id function in the vairable block
+// storing the block id function in the variable block
 var block = document.getElementById("block");
 // initialising the counter variable as '0'
 var counter=0;
 // initialising the timeoutAnimation variable as 300[ms]
 var removeAnimationTime = 300;
 // initialising the deathCheck variable as 10[ms]
-var deathCheck = 10
+var deathCheck = 10;
+
+var characterRHS = 20;
+var characterLHS = -20;
+var characterBase = 130;
 
 
 // The ELEMENT.classList is a read-only property that returns a live
@@ -36,7 +40,7 @@ function jump(){
 var checkDead = setInterval(function() {
     let characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
     let blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
-    if(blockLeft<20 && blockLeft>-20 && characterTop>=130){
+    if(blockLeft<characterRHS && blockLeft>characterLHS && characterTop>=characterBase){
         block.style.animation = "none";
         alert("Game Over. score: "+Math.floor(counter/100));
         counter=0;
